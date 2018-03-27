@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- APRENDENDO JQUERY MOBILE PRIMEIROS PASSOS PARA O SUCESSO 26/03/18-->
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width" >
+        <title>JqueryMobile - one</title>
+        <!--<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" >
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script> -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+       
+    </head>
+    <body>
+        <!-- Inicio da Página -->
+        <div data-role="page" data-theme="a">
+                <!-- Inicio do cabecalho -->
+                <header data-role="header"  data-position="fixed" data-theme="b">
+                    <a href="#" data-icon="gear" class="ui-btn-right">Ferramentas</a>
+                    <h1>Grides</h1>
+                <!-- Inicio do navegacao principal -->
+                    
+                <!-- fim do navegacao principal -->
+                </header>
+                <div data-role="content">
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a ui-bar-b">
+                            <p>Coluna One</p>
+                        </div>
+                        <div class="ui-block-b">
+                            <p>Coluna Two</p>
+                        </div>
+                        <div class="ui-block-c ui-bar-b">
+                            <p>Coluna Three</p>
+                        </div>
+                        <div class="ui-block-a">
+                            <p>Coluna One.Two</p>
+                        </div>
+                        <div class="ui-block-b ui-bar-b">
+                            <p>Coluna Two.Two</p>
+                        </div>
+                        <div class="ui-block-c">
+                            <p>Coluna Three.Two</p>
+                        </div>
+                    </div>
+                    <div class="ui-grid-c">
+                        <!-- primeira linha do Grid -->
+                        <div class="ui-block-a">
+                            <button type="submit">A</button>
+                        </div>
+                        <div class="ui-block-b">
+                            <button type="submit">B</button>
+                        </div>
+                        <div class="ui-block-c">
+                            <button type="submit">C</button>
+                        </div>
+                        <div class="ui-block-d">
+                            <button type="submit">D</button>
+                        </div>
+                        <!-- Segunda linha do Grid -->
+                        <div class="ui-block-a">
+                            <button type="submit" data-icon="gear">A</button>
+                        </div>
+                        <div class="ui-block-b">
+                            <button type="submit" data-icon="heart">B</button>
+                        </div>
+                        <div class="ui-block-c">
+                            <button type="submit" data-icon="home">C</button>
+                        </div>
+                        <div class="ui-block-d">
+                            <button type="submit" data-icon="info">D</button>
+                        </div>
+                    </div>
+                 </div>
+                <!-- fim do cabecalho -->
+                <footer data-role="footer" class="ui-bar" data-position="fixed"> <!-- ui-bar da padding / position deixa fixed -->
+                    <small class="ui-bar"> Guia Noturno &#169 Todos direitos Reservados</small>
+                </footer>
+        </div>
+        <!-- Fim da Página --> 
+    </body>
+</html>

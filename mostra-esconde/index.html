@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- APRENDENDO JQUERY MOBILE PRIMEIROS PASSOS PARA O SUCESSO 26/03/18-->
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width" >
+        <title>JqueryMobile - one</title>
+        <!--<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" >
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script> -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+       
+    </head>
+    <body>
+        <!-- Inicio da Página -->
+        <div data-role="page" data-theme="a">
+                <!-- Inicio do cabecalho -->
+                <header data-role="header"  data-position="fixed" data-theme="b">
+                    <a href="#" data-icon="gear" class="ui-btn-right">Ferramentas</a>
+                    <h1> Efeito - Mostra Esconde</h1>
+                <!-- Inicio do navegacao principal -->
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="#" class="ui-btn-active ui-state-persist">um</a></li> <!-- para quando voltar o link continuar ativo ui-state-persist -->
+                        <li><a href="#">dois</a></li>
+                        <li><a href="#">tres</a></li>
+                    </ul>
+                </nav>                <!-- fim do navegacao principal -->
+                </header>
+                <div data-role="content">
+                    <div data-role="collapsible-set"><!-- efeito acordeon quando abre um o outro feixa -->
+                        <div data-role="collapsible">
+                            <h1>Componetes</h1>
+                            <h3>Componentes conteudo</h3>
+                            <p>Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, </p>
+                            <ul>
+                                <li>Conteudo da lista</li>
+                                <li>Conteudo da lista</li>
+                                <li>Conteudo da lista</li>
+                                <li>Conteudo da lista</li>
+                                <li>Conteudo da lista</li>
+                            </ul>
+                        </div>
+                        <div data-role="collapsible" data-collapsed="false" data-theme="b" data-content-theme="b">
+                            <h3>Componentes 2</h3>
+                            <p>Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, </p>
+                            <ul>
+                                <li>Conteudo da lista</li>
+                                <li>Conteudo da lista</li>
+                                <li>Conteudo da lista</li>
+                                <li>Conteudo da lista</li>
+                                <li>Conteudo da lista</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim do cabecalho -->
+                <footer data-role="footer" class="ui-bar" data-position="fixed"> <!-- ui-bar da padding / position deixa fixed -->
+                    <small class="ui-bar"> Guia Noturno &#169 Todos direitos Reservados</small>
+                </footer>
+        </div>
+        <!-- Fim da Página --> 
+    </body>
+</html>

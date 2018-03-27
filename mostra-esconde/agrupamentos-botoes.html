@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- APRENDENDO JQUERY MOBILE PRIMEIROS PASSOS PARA O SUCESSO 26/03/18-->
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width" >
+        <title>JqueryMobile - one</title>
+        <!--<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" >
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script> -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+       
+    </head>
+    <body>
+        <!-- Inicio da Página -->
+        <div data-role="page" data-theme="a">
+                <!-- Inicio do cabecalho -->
+                <header data-role="header"  data-position="fixed" data-theme="b">
+                    <a href="#" data-icon="gear" class="ui-btn-right">Ferramentas</a>
+                    <h1>Agrupamentos Botões com Jquery</h1> 
+                <!-- Inicio do navegacao principal -->
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="#" class="ui-btn-active ui-state-persist">ONE</a></li> <!-- para quando voltar o link continuar ativo ui-state-persist -->
+                        <li><a href="#">TWO</a></li>
+                        <li><a href="#">THREE</a></li>
+                    </ul>
+                </nav>
+                <!-- fim do navegacao principal -->
+               </header>
+                <!-- fim do cabecalho --> 
+                <div data-role="content">
+                    <a href="#" data-role="button" data-icon="home" data-inline="true">HOME</a><!-- data-inline="true" agrupa os botoes em linha -->
+                    <a href="#" data-role="button" data-icon="gear" data-inline="true">FERRAMENTAS</a>
+                    <div data-role="controlgroup" data-inline="horizontal">
+                        <button data-icon="home">One</button>
+                        <button data-icon="grid">Two</button>
+                        <button data-icon="delete">Three</button>
+                    </div>
+                    
+                    <div data-role="controlgroup" data-type="horizontal">
+                        <button data-icon="home">BTN One</button>
+                        <button data-icon="grid">BTN Two</button>
+                        <button data-icon="delete">BTN Three</button>
+                    </div>
+                 </div>
+                <footer data-role="footer" class="ui-bar" data-position="fixed"> <!-- ui-bar da padding / position deixa fixed -->
+                    <small class="ui-bar"> Guia Noturno &#169 Todos direitos Reservados</small>
+                </footer>
+        </div>
+        <!-- Fim da Página --> 
+    </body>
+</html>
