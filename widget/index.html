@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- APRENDENDO JQUERY MOBILE PRIMEIROS PASSOS PARA O SUCESSO 26/03/18-->
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width" >
+        <title>JqueryMobile - one</title>
+        <!--<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" >
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script> -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+       <!-- <script text="text/javascript">
+            $.mobile.ajaxEnabled=false;
+        </script> --> <!-- Desabilita o Ajax geral-->
+    </head>
+    <body>
+        <!-- Inicio da Página -->
+        <div data-role="page">
+                <!-- Inicio do cabecalho -->
+                <header data-role="header"  data-position="fixed">
+                    <h1>Widget Panel</h1>
+                </header>
+                <!-- fim do cabecalho -->
+                <!-- Inicio do navegacao principal -->
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="index.html" class="ui-btn-active ui-state-persist">HOME</a></li>
+                        <li><a href="produtos.html">PRODUTOS</a></li> <!-- Desabilita o Ajax Rel External-->
+                        <li><a href="equipe.html">EQUIPE</a></li> <!-- Desabilita o Ajax Data-ajax, target="_self", Rel="external" External-->
+                    </ul>
+                </nav>
+                <!-- fim do navegacao principal -->
+                <!-- inicio principal -->
+                <section data-role="content">
+                    <h1>Widget!</h1>
+                    <p>Abrindo painel seguindo as condiçoes.</p>
+                    <a href="#esquerda" data-role="button" data-icon="arrow-l"> A Esquerda</a>
+                    <a href="#direita" data-role="button" data-icon="arrow-r" data-iconpos="right"> A Direita</a>
+                    <a href="#overlay" data-role="button"> Overlay</a>
+                    <a href="#overlaydireita" data-role="button" data-icon="arrow-r" data-iconpos="right"> Overlay A Direita</a>
+                    <a href="#animate" data-role="button" data-icon="arrow-r" data-iconpos="right"> Sem animacao</a>
+                </section>
+                <!-- fim principal -->
+                <!-- inicio footer da pagina -->
+                <footer data-role="footer" data-position="fixed">
+                   <!-- <nav data-role="navbar">
+                        <ul>
+                            <li><a href="contato.html">CONTATO</a></li>
+                            <li><a href="empresa.html">EMPRESA</a></li>
+                            <li><a href="local.html">LOCALIZAÇÃO</a></li>
+                        </ul>
+                    </nav>  -->
+                   <small class="ui-bar">Guia Noturno &#169 2018 Todos Direitos Reservados</small>
+                </footer>
+                <!-- fim footer da pagina -->
+                <div data-role="panel" id="esquerda">
+                    <h2>Panel de Controle</h2>
+                    <p>
+                        Conteudo do panel.
+                    </p>
+                    <a href="" data-role="button" data-rel="close"> Fechar</a>
+                </div>
+                <div data-role="panel" id="direita" data-position="right" data-theme="b">
+                    <h2>Panel de Controle</h2>
+                    <p>
+                        Conteudo do panel.
+                    </p>
+                    <a href="" data-role="button" data-rel="close"> Fechar</a>
+                </div>
+                <div data-role="panel" id="overlay" data-display="overlay" data-theme="b">
+                    <h2>Panel de Controle</h2>
+                    <p>
+                        Conteudo do panel.
+                    </p>
+                    <a href="" data-role="button" data-rel="close"> Fechar</a>
+                </div>
+                <div data-role="panel" id="overlaydireita" data-display="overlay" data-position="right" data-theme="b">
+                    <h2>Panel de Controle</h2>
+                    <p>
+                        Conteudo do panel.
+                    </p>
+                    <a href="" data-role="button" data-rel="close"> Fechar</a>
+                    
+                </div>
+                <div data-role="panel" id="animate" data-animate="false">
+                    <h2>Panel de Controle</h2>
+                    <p>
+                        Conteudo do panel.
+                    </p>
+                    <a href="" data-role="button" data-rel="close"> Fechar</a>
+                </div>
+        </div>
+        <!-- Fim da Página --> 
+    </body>
+</html>

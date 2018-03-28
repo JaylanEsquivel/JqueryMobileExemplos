@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- APRENDENDO JQUERY MOBILE PRIMEIROS PASSOS PARA O SUCESSO 26/03/18-->
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width" >
+        <title>JqueryMobile - one</title>
+        <!--<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" >
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script> -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+       <!-- <script text="text/javascript">
+            $.mobile.ajaxEnabled=false;
+        </script> --> <!-- Desabilita o Ajax geral-->
+    </head>
+    <body>
+        <!-- Inicio da Página -->
+        <div data-role="page">
+                <!-- Inicio do cabecalho -->
+                <header data-role="header"  data-position="fixed">
+                    <h1>Listas</h1>
+                </header>
+                <!-- fim do cabecalho -->
+                <!-- Inicio do navegacao principal -->
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="#" class="ui-btn-active ui-state-persist">HOME</a></li>
+                        <li><a href="#">PRODUTOS</a></li> <!-- Desabilita o Ajax Rel External-->
+                        <li><a href="#">EQUIPE</a></li> <!-- Desabilita o Ajax Data-ajax, target="_self", Rel="external" External-->
+                    </ul>
+                </nav>
+                <!-- fim do navegacao principal -->
+                <!-- inicio principal -->
+                <section data-role="content">
+                    <ul data-role="listview" data-inset="true">
+                        <li data-role="list-divider">FrontEnd</li>
+                        <li>HTML <span class="ui-li-count">15</span></li>
+                        <li>CSS <span class="ui-li-count">23</span></li>
+                        <li>JQUERY <span class="ui-li-count">5</span></li>
+                        <li data-role="list-divider">BackEnd</li>
+                        <li><img src="../img/usa.png" alt="" class="ui-li-icon">PHP</li>
+                        <li><img src="../img/bra.png" alt="" class="ui-li-icon">Mysql</li>
+                    </ul>
+                    
+                    <ul data-role="listview" data-inset="true">
+                        <li data-role="list-divider">FrontEnd</li>
+                        <li>
+                            <h3>HTML5</h3>
+                            <p>Professor: Jaylan</p>
+                            <p class="ui-li-aside"><strong>02h45min</strong></p>
+                            <span class="ui-li-count">15</span>
+                        </li>
+                        <li>
+                            <h3>CSS</h3>
+                            <p>Professor: Jaylan</p>
+                            <p class="ui-li-aside"><strong>01h50min</strong></p>
+                            <span class="ui-li-count">23</span>
+                        </li>
+                        <li>
+                            <h3>JQUERY</h3>
+                            <p>Professor: Jaylan</p>
+                            <p class="ui-li-aside"><strong>03h30min</strong></p>
+                            <span class="ui-li-count">5</span>
+                        </li>
+                        <li data-role="list-divider">BackEnd</li>
+                        <li><img src="../img/usa.png" alt="" class="ui-li-icon">PHP</li>
+                        <li><img src="../img/bra.png" alt="" class="ui-li-icon">Mysql</li>
+                    </ul>  
+                    
+                    <ol data-role="listview"  data-inset="true" data-theme="b">
+                        <li data-role="list-divider">FrontEnd</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JQUERY</li>
+                        <li data-role="list-divider">BackEnd</li>
+                        <li>PHP</li>
+                        <li>Mysql</li>
+                    </ol> 
+                    
+                    <ul data-role="listview"  data-inset="true" data-autodividers="true">
+                        <li>Ana Maria</li>
+                        <li>Analice</li>
+                        <li>Kemilly</li>
+                        <li>Janete</li>
+                        <li>Tiara</li>
+                        <li>Gabrielly</li>
+                        <li>Danielly</li>
+                        <li>Luana</li>
+                    </ul>
+                    
+                    <div data-role="collapsible">
+                        <h1>FrontEnd</h1>
+                        <ul data-role="listview">
+                           <li>HTML</li>
+                           <li>CSS</li>
+                           <li>JQUERY</li> 
+                        </ul>
+                    </div>
+                    
+                    <div data-role="collapsible">
+                        <h1>BackEnd</h1>
+                        <ul data-role="listview">
+                           <li>PHP</li>
+                           <li>Mysql</li> 
+                        </ul>
+                    </div>
+                    
+                    <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar pessoas..." data-filter-reveal="true">
+                        <li data-role="list-divider">Meninos</li>
+                        <li>Acilino </li>
+                        <li>Alberto</li>
+                        <li>Bruno</li>
+                        <li>Francisco </li>
+                        <li>Danilo</li>
+                        <li>Junior</li>
+                        <li>Carlos </li>
+                        <li>Joao</li>
+                        <li>Paulo</li>
+                        <li>Vanderlei </li>
+                        <li>Matheus</li>
+                        <li>Marcus</li>
+                        <li>Juliandro</li>
+                        <li data-role="list-divider">Meninas</li>
+                        <li>Ana</li>
+                        <li>Julia</li>
+                        <li>Maristela</li>
+                        <li>Poliana</li>
+                        <li>Raimunda</li>
+                        <li>Karla</li>
+                        <li>Vanessa</li>
+                        <li>Luiza</li>
+                        <li>Paula</li>
+                        <li>Iasmin</li>
+                        <li>Islane</li>
+                        <li>Eva</li>
+                        <li>Elem</li>
+                        <li>Livia</li>
+                        <li>Reniuda</li>
+                        <li>Roberta</li>
+                    </ul>
+
+                </section>
+                <!-- fim principal -->
+                <!-- inicio footer da pagina -->
+                <footer data-role="footer" data-position="fixed">
+                   <small class="ui-bar">Guia Noturno &#169 2018 Todos Direitos Reservados</small>
+                </footer>
+                <!-- fim footer da pagina -->
+        </div>
+        <!-- Fim da Página --> 
+    </body>
+</html>

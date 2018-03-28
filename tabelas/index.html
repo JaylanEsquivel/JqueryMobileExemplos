@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- APRENDENDO JQUERY MOBILE PRIMEIROS PASSOS PARA O SUCESSO 26/03/18-->
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width" >
+        <title>JqueryMobile - one</title>
+        <!--<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" >
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script> -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+       <!-- <script text="text/javascript">
+            $.mobile.ajaxEnabled=false;
+        </script> --> <!-- Desabilita o Ajax geral-->
+    </head>
+    <body>
+        <!-- Inicio da Página -->
+        <div data-role="page">
+                <!-- Inicio do cabecalho -->
+                <header data-role="header"  data-position="fixed">
+                    <h1>Tabelas Response</h1>
+                </header>
+                <!-- fim do cabecalho -->
+                <!-- Inicio do navegacao principal -->
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="index.html" class="ui-btn-active ui-state-persist">HOME</a></li>
+                        <li><a href="produtos.html">PRODUTOS</a></li> <!-- Desabilita o Ajax Rel External-->
+                        <li><a href="equipe.html">EQUIPE</a></li> <!-- Desabilita o Ajax Data-ajax, target="_self", Rel="external" External-->
+                    </ul>
+                </nav>
+                <!-- fim do navegacao principal -->
+                <!-- inicio principal -->
+                <section data-role="content">
+                    <table data-role="table" data-mode="columntoggle" id="tabela" class="ui-responsive table-stroke table-stripe" data-column-btn-text="+ Colunas" data-column-btn-theme="b">
+                        <thead>
+                            <tr>
+                                <th data-priority="2">Máteria</th>
+                                <th data-priority="1">Aluno</th>
+                                <th data-priority="3">Nota</th>
+                                <th data-priority="5">Data</th>
+                                <th data-priority="4">Ano</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Historia</td>
+                                <td>Joao</td>
+                                <td>10</td>
+                                 <td>01</td>
+                                <td>18</td>
+                            </tr
+                            <tr>
+                                <td>Historia</td>
+                                <td>Felipe</td>
+                                <td>10</td>
+                                <td>01</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>Historia</td>
+                                <td>Fernanda</td>
+                                <td>10</td>
+                                <td>01</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>Historia</td>
+                                <td>Pedro</td>
+                                <td>10</td>
+                                <td>01</td>
+                                <td>18</td>
+                            </tr
+                            <tr>
+                                <td>Historia</td>
+                                <td>Paulo</td>
+                                <td>10</td>
+                                <td>01</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>Historia</td>
+                                <td>Nany</td>
+                                <td>10</td>
+                                <td>01</td>
+                                <td>18</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <!-- fim principal -->
+                <!-- inicio footer da pagina -->
+                <footer data-role="footer" data-position="fixed">
+                   <!-- <nav data-role="navbar">
+                        <ul>
+                            <li><a href="contato.html">CONTATO</a></li>
+                            <li><a href="empresa.html">EMPRESA</a></li>
+                            <li><a href="local.html">LOCALIZAÇÃO</a></li>
+                        </ul>
+                    </nav>  -->
+                   <small class="ui-bar">Guia Noturno &#169 2018 Todos Direitos Reservados</small>
+                </footer>
+                <!-- fim footer da pagina -->
+        </div>
+        <!-- Fim da Página --> 
+    </body>
+</html>
